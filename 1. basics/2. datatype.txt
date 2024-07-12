@@ -1,0 +1,131 @@
+### Data Types in C++
+
+In C++, data types specify the type of data that a variable can hold. They define the size and layout of the variable's memory, the range of values that can be stored within that memory, and the set of operations that can be applied to the variable. Here's an overview of the main data types in C++:
+
+#### 1. **Basic Data Types**
+
+1. **Integer Types**:
+   - **`int`**: Represents integer values. Typically 4 bytes.
+   - **`short`**: Represents short integer values. Typically 2 bytes.
+   - **`long`**: Represents long integer values. Typically 4 or 8 bytes.
+   - **`long long`**: Represents very long integer values. Typically 8 bytes.
+   - **`unsigned`**: Represents only non-negative integer values.
+
+   ```cpp
+   int a = 10;
+   unsigned int b = 20;
+   short c = 5;
+   long d = 100000;
+   long long e = 10000000000;
+   ```
+
+2. **Floating-Point Types**:
+   - **`float`**: Represents single-precision floating-point values. Typically 4 bytes.
+   - **`double`**: Represents double-precision floating-point values. Typically 8 bytes.
+   - **`long double`**: Represents extended-precision floating-point values. Size varies.
+
+   ```cpp
+   float f = 3.14f;
+   double g = 3.14159;
+   long double h = 3.14159265358979323846L;
+   ```
+
+3. **Character Types**:
+   - **`char`**: Represents a single character. Typically 1 byte.
+   - **`wchar_t`**: Represents a wide character. Size varies, typically 2 or 4 bytes.
+   - **`char16_t`**: Represents a UTF-16 character. Typically 2 bytes.
+   - **`char32_t`**: Represents a UTF-32 character. Typically 4 bytes.
+
+   ```cpp
+   char ch = 'A';
+   wchar_t wch = L'Ω';
+   char16_t ch16 = u'あ';
+   char32_t ch32 = U'𠜎';
+   ```
+
+4. **Boolean Type**:
+   - **`bool`**: Represents boolean values `true` or `false`.
+
+   ```cpp
+   bool isTrue = true;
+   bool isFalse = false;
+   ```
+
+#### 2. **Derived Data Types**
+
+1. **Arrays**: A collection of elements of the same type.
+   ```cpp
+   int arr[5] = {1, 2, 3, 4, 5};
+   ```
+
+2. **Pointers**: Variables that store memory addresses.
+   ```cpp
+   int *ptr = &a;
+   ```
+
+3. **References**: Aliases for other variables.
+   ```cpp
+   int &ref = a;
+   ```
+
+4. **Functions**: Blocks of code that perform specific tasks.
+   ```cpp
+   int add(int x, int y) {
+       return x + y;
+   }
+   ```
+
+#### 3. **User-Defined Data Types**
+
+1. **Structures**: Group different data types together.
+   ```cpp
+   struct Person {
+       string name;
+       int age;
+   };
+   ```
+
+2. **Unions**: Similar to structures but share the same memory location.
+   ```cpp
+   union Data {
+       int i;
+       float f;
+       char str[20];
+   };
+   ```
+
+3. **Enumerations**: Define a type with a set of named values.
+   ```cpp
+   enum Color { RED, GREEN, BLUE };
+   ```
+
+4. **Classes**: Define objects with attributes and methods.
+   ```cpp
+   class Car {
+   public:
+       string model;
+       int year;
+
+       void drive() {
+           cout << "Driving " << model << endl;
+       }
+   };
+   ```
+
+#### 4. **Type Modifiers**
+
+Modifiers can be used with the basic data types to alter the data type's properties. The most common modifiers are:
+
+1. **`signed`**: Default for integer types, allows for both positive and negative values.
+2. **`unsigned`**: Allows only non-negative values.
+3. **`short`**: Reduces the size of the data type.
+4. **`long`**: Increases the size of the data type.
+
+```cpp
+unsigned int u = 400;
+long long int l = 9000000000;
+```
+
+### Summary
+
+C++ offers a rich set of data types and modifiers to handle various kinds of data efficiently. Understanding these data types is crucial for effective programming in C++, as it helps in utilizing memory efficiently and ensuring data integrity.
