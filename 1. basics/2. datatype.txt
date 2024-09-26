@@ -1,42 +1,40 @@
-### Data Types in C++
+Data Types in C++
 
 In C++, data types specify the type of data that a variable can hold. They define the size and layout of the variable's memory, the range of values that can be stored within that memory, and the set of operations that can be applied to the variable. Here's an overview of the main data types in C++:
 
-#### 1. **Basic Data Types**
+1. Basic Data Types
 
-1. **Integer Types**:
-   - **`int`**: Represents integer values. Typically 4 bytes.
-   - **`short`**: Represents short integer values. Typically 2 bytes.
-   - **`long`**: Represents long integer values. Typically 4 or 8 bytes.
-   - **`long long`**: Represents very long integer values. Typically 8 bytes.
-   - **`unsigned`**: Represents only non-negative integer values.
+1. Integer Types:
+   - int: Represents integer values. Typically 4 bytes.
+   - short: Represents short integer values. Typically 2 bytes.
+   - long: Represents long integer values. Typically 4 or 8 bytes.
+   - long long: Represents very long integer values. Typically 8 bytes.
+   - unsigned: Represents only non-negative integer values.
 
-   ```cpp
+   cpp
    int a = 10;
    unsigned int b = 20;
    short c = 5;
    long d = 100000;
    long long e = 10000000000;
-   ```
 
-2. **Floating-Point Types**:
-   - **`float`**: Represents single-precision floating-point values. Typically 4 bytes.
-   - **`double`**: Represents double-precision floating-point values. Typically 8 bytes.
-   - **`long double`**: Represents extended-precision floating-point values. Size varies.
+2. Floating-Point Types:
+   - float: Represents single-precision floating-point values. Typically 4 bytes.
+   - double: Represents double-precision floating-point values. Typically 8 bytes.
+   - long double: Represents extended-precision floating-point values. Size varies.
 
-   ```cpp
+   cpp
    float f = 3.14f;
    double g = 3.14159;
    long double h = 3.14159265358979323846L;
-   ```
+   
+3. Character Types:
+   - char: Represents a single character. Typically 1 byte.
+   - wchar_t: Represents a wide character. Size varies, typically 2 or 4 bytes.
+   - char16_t: Represents a UTF-16 character. Typically 2 bytes.
+   - char32_t: Represents a UTF-32 character. Typically 4 bytes.
 
-3. **Character Types**:
-   - **`char`**: Represents a single character. Typically 1 byte.
-   - **`wchar_t`**: Represents a wide character. Size varies, typically 2 or 4 bytes.
-   - **`char16_t`**: Represents a UTF-16 character. Typically 2 bytes.
-   - **`char32_t`**: Represents a UTF-32 character. Typically 4 bytes.
-
-   ```cpp
+   cpp
    char ch = 'A';
    wchar_t wch = L'Ω';
    char16_t ch16 = u'あ';
