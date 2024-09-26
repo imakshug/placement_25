@@ -16,3 +16,6 @@ int main() {
 
     return 0;
 }
+
+
+// This program checks if a year is divisible by 4 but not 100, or divisible by 400 to determine if it’s a leap year.

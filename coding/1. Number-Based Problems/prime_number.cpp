@@ -25,3 +25,7 @@ int main() {
 
     return 0;
 }
+
+
+// This code checks if a number is prime by iterating from 2 to the square root of the number and checking if it has any divisors. 
+// If it does, the number is not prime.
