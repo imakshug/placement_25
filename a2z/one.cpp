@@ -2,8 +2,9 @@
 using namespace std;
 
 int main(){
-    int x= 8, y= 9;
-    cin >> x >> y;
-    cout << "Value of x:" << x << " and y:" << y;
+    string str;
+    str=" hey akshita";
+    getline(cin, str);
+    cout << str;
     return 0;
 }
