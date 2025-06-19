@@ -1,3 +1,7 @@
+from cmath import log10
+from math import floor
+
+
 class Solution:
     def findKthNumber(self, n: int, k: int) -> int:
         # starting down a trie node
@@ -11,7 +15,7 @@ class Solution:
             # one path exceeded n, reduce depth of leaf
             if current == prefix_n+1:
                 e -= 1
-            count = 0 # sum of total count for all numbers under this node
+            count = 0 # total numbers under this node
             for i in range(e-level): # from current node to the leaf
                 # limit count by n on full depth on critical path
                 if i == (e-level-1) and prefix_n == current:
